@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="es-gt">
+<head>
+    <meta charset="UTF-8">
+    <title>EJERCICIO 1</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+</head>
+<body>
+    @if (Convert.ToString(ViewData["Error"]) == "si")
+    {
+<script language='javascript' type='text/javascript'>alert('Usuario o Contraseña Incorrecta');</script>}
+    <section class="login-box">
+        <form action="/Home/Index" method="post">
+            <header class="login-header">
+                <h1>INICIO DE SESIÓN</h1>
+               
+            </header>
+            <div class="login-content">
+                <input class="login-mail" type="text" placeholder="Usuario" name="user" required />
+                <input class="login-pass" type="password" placeholder="Password" name="pass" required />
+                <button class="login-enter">INGRESAR </button>
+                <br />
+                <br />
+                <a href="@Url.Action("create","Ejercicio1")">¿Desea crear una Cuenta?<span class="fa fa-hashtag"></span></a>
+            </div>
+        </form>
+    </section>
+</body>
+</html>

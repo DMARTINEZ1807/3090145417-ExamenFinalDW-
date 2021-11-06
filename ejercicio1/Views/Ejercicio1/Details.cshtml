@@ -1,0 +1,58 @@
+﻿@model ejercicio1.Models.Ejercicio1
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>Ejercicio1</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.contraseña)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.contraseña)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Nombre)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.correo)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.correo)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Tipousuario)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Tipousuario)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.usuario }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>
